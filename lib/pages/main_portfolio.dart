@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:worki/pages/secondpage.dart';
+import 'package:worki/pages/home_page.dart';
+import 'package:worki/pages/profile_page.dart';
+import 'package:worki/pages/setting_page.dart';
 
 class MainPortfolio extends StatefulWidget {
   const MainPortfolio({super.key});
@@ -12,9 +14,9 @@ class MainPortfolio extends StatefulWidget {
 class _MainPortfolioState extends State<MainPortfolio> {
   int _currentIndex = 0;
   final List<Widget> _pages = [
-    const Text('Halaman 1'),
-    const Text('Halaman 2'),
-    const Text('Halaman 3'),
+    HomePage(),
+    ProfilePage(),
+    SettingPage(),
   ];
 
   @override
@@ -22,7 +24,7 @@ class _MainPortfolioState extends State<MainPortfolio> {
     return Scaffold(
       appBar: AppBar(
         title: const Text(
-          'Muhammad Sadri App',
+          'WORKI FAMILY',
           style: TextStyle(),
         ),
         centerTitle: true,
@@ -30,6 +32,9 @@ class _MainPortfolioState extends State<MainPortfolio> {
       ),
       body: _pages[_currentIndex],
       bottomNavigationBar: BottomNavigationBar(
+          backgroundColor: Color.fromRGBO(30, 41, 59, 1),
+          selectedItemColor: const Color.fromARGB(255, 3, 232, 244),
+          unselectedItemColor: Colors.white,
           currentIndex: _currentIndex,
           onTap: (index) {
             setState(() {
@@ -38,10 +43,9 @@ class _MainPortfolioState extends State<MainPortfolio> {
           },
           items: const [
             BottomNavigationBarItem(
-                icon: Icon(Icons.home_max_rounded), label: 'Home'),
+                icon: Icon(Icons.home_filled), label: 'Home'),
             BottomNavigationBarItem(
-                icon: Icon(Icons.account_balance_wallet_rounded),
-                label: 'Profile'),
+                icon: Icon(Icons.account_box), label: 'Profile'),
             BottomNavigationBarItem(
                 icon: Icon(Icons.settings_applications_rounded),
                 label: 'Setting'),

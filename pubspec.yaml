@@ -67,6 +67,7 @@ flutter:
     - lib/images/pf4.png
     - lib/images/pf5.png
     - lib/images/pf6.png
+    - lib/images/background_profile.jpg
 
 
   # An image asset can refer to one or more resolution-specific "variants", see
