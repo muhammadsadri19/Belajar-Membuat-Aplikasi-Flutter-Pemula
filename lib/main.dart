@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:worki/main_portfolio.dart';
+import 'package:worki/pages/main_portfolio.dart';
 
 void main() => runApp(const MyApp());
 
