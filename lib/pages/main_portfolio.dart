@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:google_fonts/google_fonts.dart';
 import 'package:worki/pages/home_page.dart';
 import 'package:worki/pages/profile_page.dart';
 import 'package:worki/pages/setting_page.dart';
@@ -25,7 +26,6 @@ class _MainPortfolioState extends State<MainPortfolio> {
       appBar: AppBar(
         title: const Text(
           'WORKI FAMILY',
-          style: TextStyle(),
         ),
         centerTitle: true,
         backgroundColor: const Color.fromRGBO(30, 41, 59, 1),
