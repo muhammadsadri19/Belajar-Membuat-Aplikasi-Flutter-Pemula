@@ -83,6 +83,161 @@ class HomePage extends StatelessWidget {
                 autoPlayCurve: Curves.ease),
           ),
         ),
+        Padding(
+          padding: const EdgeInsets.all(15.0),
+          child: Container(
+            height: 75,
+            width: 360,
+            decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: const BorderRadius.all(Radius.circular(8.0)),
+                boxShadow: [
+                  BoxShadow(
+                      color: Colors.black.withOpacity(0.2),
+                      spreadRadius: 2,
+                      blurRadius: 5,
+                      offset: const Offset(0, 3))
+                ]),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                const Padding(
+                  padding: EdgeInsets.only(top: 15.0, left: 15.0),
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    children: [
+                      Text("Apakah kamu penasaran?"),
+                      Text('Silahkan klik disini !')
+                    ],
+                  ),
+                ),
+                Padding(
+                  padding: const EdgeInsets.all(20.0),
+                  child: Image.asset(
+                    'lib/images/icons/link.png',
+                    height: 30,
+                    width: 30,
+                  ),
+                )
+              ],
+            ),
+          ),
+        ),
+        const Padding(
+            padding: EdgeInsets.only(top: 20.0, left: 15.0, right: 15.0),
+            child: Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                Text(
+                  'Menu',
+                  style: TextStyle(fontSize: 14, fontWeight: FontWeight.w900),
+                ),
+                Text(
+                  'Lihat semua',
+                  style: TextStyle(
+                      color: Color.fromRGBO(30, 41, 59, 1),
+                      fontSize: 13,
+                      fontWeight: FontWeight.w700),
+                ),
+              ],
+            )),
+        Padding(
+          padding: const EdgeInsets.only(top: 15.0),
+          child: Row(
+            children: [
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(30, 41, 59, 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Image.asset(
+                          'lib/images/icons/submission.png',
+                          width: 25,
+                          height: 25,
+                        ),
+                      ),
+                    ),
+                    const Text(
+                      'Submission',
+                    )
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(30, 41, 59, 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Image.asset(
+                          'lib/images/icons/submission.png',
+                          width: 25,
+                          height: 25,
+                        ),
+                      ),
+                    ),
+                    const Text('Payslip')
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(30, 41, 59, 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Image.asset(
+                          'lib/images/icons/submission.png',
+                          width: 25,
+                          height: 25,
+                        ),
+                      ),
+                    ),
+                    const Text('Attendance')
+                  ],
+                ),
+              ),
+              Expanded(
+                child: Column(
+                  children: [
+                    Container(
+                      width: 50,
+                      height: 50,
+                      decoration: BoxDecoration(
+                        color: const Color.fromRGBO(30, 41, 59, 1),
+                        borderRadius: BorderRadius.circular(10),
+                      ),
+                      child: Center(
+                        child: Image.asset(
+                          'lib/images/icons/submission.png',
+                          width: 25,
+                          height: 25,
+                        ),
+                      ),
+                    ),
+                    const Text('Job Desk')
+                  ],
+                ),
+              ),
+            ],
+          ),
+        )
       ],
     );
   }
