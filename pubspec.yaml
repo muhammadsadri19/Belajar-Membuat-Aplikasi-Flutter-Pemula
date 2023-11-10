@@ -77,6 +77,9 @@ flutter:
     - lib/images/banner.png  
     - lib/images/icons/submission.png
     - lib/images/icons/link.png
+    - lib/images/Screenshoot/homepage.jpg
+    - lib/images/Screenshoot/profilepage.jpg
+
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware
